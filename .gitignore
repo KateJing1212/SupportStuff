@@ -1,0 +1,40 @@
+# Python runtime and cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Build and packaged binaries
+**/build/
+**/dist/
+*.spec
+*.exe
+*.dll
+*.pyd
+*.pkg
+*.pyz
+
+# Local F2 database and downloaded/offline datasets
+/backend/data/*.sqlite*
+/backend/data/*.db
+/tmp/
+
+# CICAT generated datasets and local instance data
+/reference/cicat/cicat/generate/cve.json
+/reference/cicat/cicat/generate/cve2technique.jsonl
+/reference/cicat/cicat/generate/attack.json
+/reference/cicat/cicat/api_data/
+/reference/cicat/cicat/Out/
+
+# Local encrypted material and credentials
+*.enc
+.env
+.env.*
+!.env.example
+
+# Project reference documents and external reference project
+/reference/
+/handoff*.md
+
